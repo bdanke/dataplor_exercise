@@ -1,5 +1,5 @@
 ## Representation of Adjacency List
-Within the adjacency list there are a number of nodes for which there is not a parent, i.e. more than one tree is represented by the data and there are also nodes having more than two children.
+Within the adjacency list there are a number of nodes for which there is not a parent, i.e. more than one tree is represented by the data, and there are also nodes having more than two children.
 
 For the first part of the exercise, I was asked to create an API that would be able to ingest two nodes IDs and return the root node, least common ancestor, and depth of that ancestral node. Being given a list in (ID, parent ID) form, we are able to find any node's parent in constant time with a Hash lookup. This is done here with Ruby's built-in Hash object, however, other key value stores that are more suited to large volumes of data could be used when are large volume of data is expected.
 
