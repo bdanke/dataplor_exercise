@@ -6,7 +6,7 @@ class AdjacencyData
   def initialize(csv_file)
     @child_to_parent = {}
     @parent_to_children = {}
-    CSV.foreach(csv_file) do |row|
+    CSV.foreach(csv_file, headers: true) do |row|
       child = row[0].to_i
       parent = row[1].to_i unless row[1].nil?
 
